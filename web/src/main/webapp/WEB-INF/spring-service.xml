@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <aop:aspectj-autoproxy/>
+
+    <bean id="validator"
+          class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean"/>
+
+    <!--<bean id="temp1" class="com.keunsy.hub.core.Temp1"/>-->
+    <!--<bean id="temp2" class="com.keunsy.hub.core.Temp2"/>-->
+    <!--<aop:config>-->
+        <!--<aop:aspect ref="temp1" order="1">-->
+            <!--<aop:around method="record"-->
+                        <!--pointcut="execution(* com.keunsy.hub.web.controller.*.*(..))"/>-->
+        <!--</aop:aspect>-->
+        <!--<aop:aspect ref="temp2" order="2">-->
+            <!--<aop:around method="profile"-->
+                        <!--pointcut="(execution(* com.keunsy.hub.web.service.impl.*.*(..))) || execution(* com.keunsy.hub.web.controller.*.*(..))"/>-->
+        <!--</aop:aspect>-->
+    <!--</aop:config>-->
+
+    <bean id="propertyConfigurator"
+          class="com.github.autoconf.spring.reloadable.ReloadablePropertySourcesPlaceholderConfigurer">
+        <property name="ignoreUnresolvablePlaceholders" value="false"/>
+        <property name="ignoreResourceNotFound" value="true"/>
+        <property name="configName"
+                  value="keunsy-hub"/>
+        <property name="location" value="classpath:application.properties"/>
+    </bean>
+
+    <bean class="com.github.autoconf.spring.reloadable.ReloadablePropertyPostProcessor">
+        <constructor-arg ref="propertyConfigurator"/>
+    </bean>
+
+
+    <context:annotation-config/>
+</beans>
