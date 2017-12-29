@@ -29,50 +29,41 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>${spring-version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>${spring-version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context-support</artifactId>
-            <version>${spring-version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-tx</artifactId>
-            <version>${spring-version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
-            <version>${spring-version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-orm</artifactId>
-            <version>${spring-version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aspects</artifactId>
-            <version>${spring-version}</version>
         </dependency>
 
         <!-- WEB -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-            <version>${spring-version}</version>
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
-            <version>${servlet-version}</version>
-            <scope>provided</scope>
+            <scope>web</scope>
         </dependency>
 
         <!-- mongodb -->
@@ -86,24 +77,20 @@
         <dependency>
             <groupId>com.github.colin-lee</groupId>
             <artifactId>jedis-spring-support</artifactId>
-            <version>${jedis-spring-version}</version>
         </dependency>
 
         <!-- MONITOR -->
         <dependency>
             <groupId>com.github.colin-lee</groupId>
             <artifactId>config-core</artifactId>
-            <version>${config-core-version}</version>
         </dependency>
         <dependency>
             <groupId>com.github.colin-lee</groupId>
             <artifactId>rpc-trace</artifactId>
-            <version>${rpc-trace-version}</version>
         </dependency>
         <dependency>
             <groupId>com.github.colin-lee</groupId>
             <artifactId>spring-support</artifactId>
-            <version>${spring-support-version}</version>
         </dependency>
 
         <!-- test -->
@@ -136,7 +123,6 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>dubbo</artifactId>
-            <version>${dubbo-version}</version>
         </dependency>
 
 
