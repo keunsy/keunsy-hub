@@ -1,4 +1,4 @@
-package com.keunsy.hub.core.algorithm;
+package com.keunsy.hub.core.algorithm.custom;
 
 import com.google.common.collect.Lists;
 

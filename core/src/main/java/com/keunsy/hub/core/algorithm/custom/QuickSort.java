@@ -1,4 +1,4 @@
-package com.keunsy.hub.core.algorithm;
+package com.keunsy.hub.core.algorithm.custom;
 
 /**
  * Created by chenr on 2017/2/8.
