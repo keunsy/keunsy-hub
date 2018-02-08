@@ -28,7 +28,7 @@ public class RemoveDuplicatesfromSortedArray_26 {
   }
 
   /**
-   * 需要额外空间，不满足题目要求
+   * 需要额外空间，不满足题目要求（ps：可用于非有序的情况）
    */
   static int function(int[] array) {
 
