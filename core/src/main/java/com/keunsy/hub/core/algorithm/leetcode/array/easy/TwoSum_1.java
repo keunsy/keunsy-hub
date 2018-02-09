@@ -17,6 +17,8 @@ import java.util.Map;
  *
  * Because nums[0] + nums[1] = 2 + 7 = 9,
  * return [0, 1].
+ *
+ * * 使用办法：哈希
  */
 public class TwoSum_1 {
 

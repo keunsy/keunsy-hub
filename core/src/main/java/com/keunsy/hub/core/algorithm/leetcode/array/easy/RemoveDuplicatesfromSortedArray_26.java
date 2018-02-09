@@ -18,6 +18,9 @@ import java.util.Map;
  *
  * Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively.
  * It doesn't matter what you leave beyond the new length.
+ *
+ * 注：需要删除重复的值
+ * 使用办法：快慢指针
  */
 public class RemoveDuplicatesfromSortedArray_26 {
 
