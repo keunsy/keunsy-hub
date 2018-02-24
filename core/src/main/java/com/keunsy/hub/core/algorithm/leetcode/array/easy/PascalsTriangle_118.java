@@ -29,7 +29,7 @@ public class PascalsTriangle_118 {
 
   public static void main(String[] args) {
 
-    for (List<Integer> list : generate(6)) {
+    for (List<Integer> list : generate(8)) {
       for (Integer integer : list) {
         System.out.print(integer + ",");
       }
@@ -56,12 +56,11 @@ public class PascalsTriangle_118 {
   }
 
   /**
-   *  优质解答
-   * @param numRows
-   * @return
+   * 优质解答
    */
   static List<List<Integer>> generate1(int numRows) {
     List<List<Integer>> triangle = new ArrayList<List<Integer>>();
+
 
     // First base case; if user requests zero rows, they get zero rows.
     if (numRows == 0) {
@@ -74,7 +73,7 @@ public class PascalsTriangle_118 {
 
     for (int rowNum = 1; rowNum < numRows; rowNum++) {
       List<Integer> row = new ArrayList<>();
-      List<Integer> prevRow = triangle.get(rowNum-1);
+      List<Integer> prevRow = triangle.get(rowNum - 1);
 
       // The first row element is always 1.
       row.add(1);
@@ -83,7 +82,7 @@ public class PascalsTriangle_118 {
       // is equal to the sum of the elements above-and-to-the-left and
       // above-and-to-the-right.
       for (int j = 1; j < rowNum; j++) {
-        row.add(prevRow.get(j-1) + prevRow.get(j));
+        row.add(prevRow.get(j - 1) + prevRow.get(j));
       }
 
       // The last row element is always 1.
