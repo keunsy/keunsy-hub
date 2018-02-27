@@ -62,7 +62,7 @@ public class RollByRate {
       throw new RuntimeException("数据异常");
     }
 
-    if (assignTimes >= 10 || assignTimes <= 0) {
+    if (assignTimes >= TOTAL_RATE || assignTimes <= 0) {
       return peoples.get(0).getName();
     }
 

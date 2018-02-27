@@ -20,7 +20,7 @@ import java.util.List;
  * Output:
  * [5,6]
  *
- * 说明：查询所有确实的数字，存在重复，无序，不含0
+ * 说明：查询所有缺失的数字，存在重复，无序，不含0 （最大值不能超过数组的大小）
  */
 public class FindAllNumbersDisappearedInAnArray_448 {
 
