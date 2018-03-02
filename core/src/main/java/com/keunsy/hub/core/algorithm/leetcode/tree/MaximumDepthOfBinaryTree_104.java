@@ -1,5 +1,7 @@
 package com.keunsy.hub.core.algorithm.leetcode.tree;
 
+import com.keunsy.hub.core.algorithm.TreeNode;
+
 /**
  * Created on 2018/2/9.
  * https://leetcode.com/problems/maximum-depth-of-binary-tree/description/

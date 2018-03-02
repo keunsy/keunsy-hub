@@ -19,6 +19,7 @@
         <module>core</module>
         <module>web</module>
         <module>temp</module>
+        <module>ever</module>
     </modules>
 
 

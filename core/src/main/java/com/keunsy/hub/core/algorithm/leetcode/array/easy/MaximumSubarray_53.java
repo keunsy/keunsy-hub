@@ -13,6 +13,11 @@ package com.keunsy.hub.core.algorithm.leetcode.array.easy;
  *
  * More practice:
  * If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.
+ *
+ *
+ * #Dynamic Programming
+ *
+ * 说明：求连续的最大和
  */
 public class MaximumSubarray_53 {
 
@@ -54,5 +59,22 @@ public class MaximumSubarray_53 {
       maxSoFar = Math.max(maxSoFar, maxEndingHere);
     }
     return maxSoFar;
+  }
+
+  /**
+   * dp 方法
+   */
+  public int maxSubArray2(int[] nums) {
+    int n = nums.length;
+    int[] dp = new int[n];//dp[i] means the maximum subarray ending with nums[i];
+    dp[0] = nums[0];
+    int max = dp[0];
+
+    for (int i = 1; i < n; i++) {
+      dp[i] = nums[i] + (dp[i - 1] > 0 ? dp[i - 1] : 0);
+      max = Math.max(max, dp[i]);
+    }
+
+    return max;
   }
 }

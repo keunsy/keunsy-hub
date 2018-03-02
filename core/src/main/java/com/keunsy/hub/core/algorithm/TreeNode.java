@@ -1,4 +1,4 @@
-package com.keunsy.hub.core.algorithm.leetcode.tree;
+package com.keunsy.hub.core.algorithm;
 
 /**
  * Created on 2018/2/9.

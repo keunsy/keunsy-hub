@@ -54,16 +54,16 @@ public class MinCostClimbingStairs_746 {
   /**
    * dp 方法解答
    */
-  static int minCostClimbingStairs(int[] cost) {
-    int[] dp = new int[cost.length + 1];
-    dp[0] = cost[0];
-    dp[1] = cost[1];
+  static int minCostClimbingStairs(int[] nums) {
+    int[] dp = new int[nums.length + 1];
+    dp[0] = nums[0];
+    dp[1] = nums[1];
 
-    for (int i = 2; i <= cost.length; i++) {
-      int costV = (i == cost.length) ? 0 : cost[i];
-      dp[i] = Math.min(dp[i - 1] + costV, dp[i - 2] + costV);
+    for (int i = 2; i <= nums.length; i++) {
+      int costV = (i == nums.length) ? 0 : nums[i];
+      dp[i] = costV + Math.min(dp[i - 1], dp[i - 2]);
     }
-    return dp[cost.length];
+    return dp[nums.length];
   }
 
   /**
