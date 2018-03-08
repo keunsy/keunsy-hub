@@ -12,6 +12,15 @@ import java.util.Date;
 
 /**
  * 类描述：    快速排序
+ *
+ *
+ * 该方法的基本思想是：
+ *
+ * 1．先从数列中取出一个数作为基准数（一般取第一个数或者中间的数）。
+ *
+ * 2．分区过程，将比这个数大的数全放到它的右边，小于或等于它的数全放到它的左边(基准数放到截止处)。
+ *
+ * 3．再对左右区间重复第二步，直到各区间只有一个数。
  */
 public class QuickSort {
 
@@ -59,29 +68,31 @@ public class QuickSort {
     }
   }
 
-  private static void test(int a[], int l, int r) {
+
+  public static void quickSortLong(long s[], int l, int r) {
     if (l < r) {
-      int i = l, j = r, x = a[i];
+      //如果需要以 中间的数作为基准
+      //CommonUtils.swapVal(l, (l + r) / 2,s]);
+      int i = l, j = r;
+      long x = s[l];
       while (i < j) {
-        //处理左边
-        while (i < j && a[j] > x) {
+        while (i < j && s[j] >= x) {//从右向左循环找第一个小于X的数
           j--;
         }
         if (i < j) {
-          a[i++] = a[j];
+          s[i++] = s[j];//将找到的第一个小于X的数填充到左边i位置中
         }
-        //处理右边
-        while (i < j && a[i] < x) {
+        while (i < j && s[i] <= x) {//从左向有循环找第一个大于X的数
           i++;
         }
         if (i < j) {
-          a[j--] = a[i];
+          s[j--] = s[i];//将找到的第一个大于X的数填充到右边j位置中
         }
       }
-      a[i] = x;
-      test(a, l, i - 1);
-      test(a, i + 1, r);
+      s[i] = x;//将基数X填充到 i或j的位置（此时i=j）
+      //递归
+      quickSortLong(s, l, i - 1);//基数左边部分重复上述操作
+      quickSortLong(s, i + 1, r);
     }
-
   }
 }

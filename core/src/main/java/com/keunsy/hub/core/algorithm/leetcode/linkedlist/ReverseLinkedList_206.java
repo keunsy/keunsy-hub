@@ -1,6 +1,6 @@
 package com.keunsy.hub.core.algorithm.leetcode.linkedlist;
 
-import com.keunsy.hub.core.algorithm.ListNode;
+import com.keunsy.hub.core.datastructure.ListNode;
 
 /**
  * https://leetcode.com/problems/reverse-linked-list/description/

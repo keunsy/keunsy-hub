@@ -1,4 +1,4 @@
-package com.keunsy.hub.core.algorithm;
+package com.keunsy.hub.core.datastructure;
 
 /**
  * Created on 2018/2/9.

@@ -1,4 +1,4 @@
-package com.keunsy.hub.core.algorithm;
+package com.keunsy.hub.core.datastructure;
 
 public class Node {
   public Node next;

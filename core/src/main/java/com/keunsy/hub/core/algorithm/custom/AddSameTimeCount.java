@@ -2,6 +2,8 @@ package com.keunsy.hub.core.algorithm.custom;
 
 import com.google.common.collect.Lists;
 
+import com.keunsy.hub.core.algorithm.sort.QuickSort;
+
 import org.apache.commons.collections4.CollectionUtils;
 
 import java.util.Date;
@@ -47,7 +49,7 @@ public class AddSameTimeCount {
       timeArray[i * 2] = situations.get(i).getStartTime().getTime();
       timeArray[i * 2 + 1] = situations.get(i).getEndTime().getTime();
     }
-    QuickSort.doQuickSort(timeArray);//进行排序
+    QuickSort.quickSortLong(timeArray, 0, timeArray.length - 1);//进行排序
 
     List<Situation> list = Lists.newArrayList();
     for (int i = 0, timeArrayLen = timeArray.length; i < timeArrayLen - 1; i++) {

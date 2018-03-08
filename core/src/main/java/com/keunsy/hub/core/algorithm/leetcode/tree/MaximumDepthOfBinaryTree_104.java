@@ -1,6 +1,6 @@
 package com.keunsy.hub.core.algorithm.leetcode.tree;
 
-import com.keunsy.hub.core.algorithm.TreeNode;
+import com.keunsy.hub.core.datastructure.TreeNode;
 
 /**
  * Created on 2018/2/9.

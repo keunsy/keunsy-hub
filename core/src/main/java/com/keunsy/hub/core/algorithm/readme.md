@@ -13,16 +13,19 @@ https://www.zhihu.com/question/19981544
 - 递归
 - 函数归纳总结
 - bit
-- 先排序
+- 先排序，后处理
 - 二分
+- BF (Brute Force 暴风算法)
 
 图（矩阵）：
 - DFS（deep first search 深搜 、类似前序遍历） 
 - BFS（广搜）
 
--DP (动态规划)
+求最优的问题：
+- DP (动态规划)
 
--BF (Brute Force 暴风算法)
+求相同子串问题（LCS等）：
+- KMP(字符串匹配算法)
 
 
 #### 递归

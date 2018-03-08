@@ -1,4 +1,4 @@
-package com.keunsy.hub.core.algorithm;
+package com.keunsy.hub.core.datastructure;
 
 /**
  * 构建二叉树
