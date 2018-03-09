@@ -8,6 +8,9 @@
  */
 package com.keunsy.hub.core.algorithm.sort;
 
+/**
+ * 堆排序
+ */
 public class HeapSort {
 
   public static void main(String[] args) {

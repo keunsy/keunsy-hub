@@ -27,14 +27,7 @@ public class UniquePaths_62 {
 
   private static int func(int n) {
 
-    if (n == 1) {
-      return 1;
-    }
-    if (n == 2) {
-      return 2;
-    }
-
-    return func(n - 1) + func(n - 2);
+    return -1;
   }
 
 }
