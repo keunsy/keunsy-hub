@@ -19,7 +19,7 @@ public class Singleton {
 
 /**
  * 枚举方式
- * 延迟加载，线程安全,防止房序列化重新创建对象
+ * 延迟加载，线程安全,防止反序列化重新创建对象
  */
 enum SingletonEnum {
 
