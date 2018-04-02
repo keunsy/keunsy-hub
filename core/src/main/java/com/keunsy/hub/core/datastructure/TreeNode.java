@@ -10,4 +10,10 @@ public class TreeNode {
   public int value;
 
 
+  public TreeNode() {
+  }
+
+  public TreeNode(int value) {
+    this.value = value;
+  }
 }

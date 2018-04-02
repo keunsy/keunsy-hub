@@ -34,8 +34,8 @@ public class ClimbingStairs_70 {
 
   public static void main(String[] args) {
 
-    System.out.println(func(4));
-    System.out.println(climbStairs(4));
+    System.out.println(func(10));
+    System.out.println(climbStairs(10));
 
   }
 
